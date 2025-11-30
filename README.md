@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pittsburgh Combat
+
+A modern, responsive website for Pittsburgh Combat - a premier self-defense training facility. Built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4.
+
+## Features
+
+- **Modern Design**: Clean black and white aesthetic with smooth animations and shadows
+- **Responsive**: Fully optimized for mobile and desktop experiences
+- **Fast Performance**: Built on Next.js 16 with React 19 for optimal speed
+- **Stripe Integration Ready**: Membership checkout flow prepared for Stripe payments
+- **Accessible Navigation**: Smooth scrolling, mobile-friendly menu, and clear CTAs
+- **SEO Optimized**: Proper metadata and semantic HTML structure
+
+## Pages
+
+- **Home**: Hero section with feature highlights and CTAs
+- **About**: Company mission, values, and story
+- **System**: Detailed training methodology and components
+- **Private**: Information about private training sessions
+- **Membership**: Pricing tiers with Stripe checkout integration
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ installed
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Run the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+### Stripe Setup (Optional)
 
-To learn more about Next.js, take a look at the following resources:
+To enable live payment processing:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Create a [Stripe account](https://stripe.com)
+2. Get your API keys from the [Stripe Dashboard](https://dashboard.stripe.com/apikeys)
+3. Create a `.env.local` file in the root directory:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```env
+STRIPE_SECRET_KEY=sk_test_your_key_here
+STRIPE_PUBLISHABLE_KEY=pk_test_your_key_here
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+```
 
-## Deploy on Vercel
+4. Install Stripe SDK:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+pnpm add stripe
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Uncomment the Stripe implementation in `/app/api/create-checkout-session/route.ts`
+6. Create your products and prices in the Stripe Dashboard
+7. Update the `stripePriceId` values in `/app/membership/page.tsx` with your actual Stripe Price IDs
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS 4
+- **Language**: TypeScript
+- **Fonts**: Geist Sans & Geist Mono
+- **Linting**: ESLint with Next.js config
+
+## Project Structure
+
+```
+pittsburgh-combat-club/
+├── app/
+│   ├── about/           # About page
+│   ├── api/             # API routes
+│   ├── components/      # Reusable components
+│   ├── membership/      # Membership and checkout pages
+│   ├── private/         # Private training page
+│   ├── system/          # Training system page
+│   ├── globals.css      # Global styles
+│   ├── layout.tsx       # Root layout with navigation
+│   └── page.tsx         # Home page
+├── public/              # Static assets
+└── package.json         # Dependencies
+```
+
+## Development
+
+- Run linter: `pnpm lint`
+- Build for production: `pnpm build`
+- Start production server: `pnpm start`
+
+## Deployment
+
+The easiest way to deploy is using [Vercel](https://vercel.com):
+
+1. Push your code to GitHub
+2. Import the repository in Vercel
+3. Add environment variables for Stripe (if using)
+4. Deploy!
+
+## License
+
+All rights reserved © 2025 Pittsburgh Combat
+# PITTSBURGH COMBAT CLUB
