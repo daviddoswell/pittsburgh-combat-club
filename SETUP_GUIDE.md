@@ -1,8 +1,8 @@
-# Pittsburgh Combat Website - Setup Guide
+# Pittsburgh Combat Club Website - Setup Guide
 
 ## 🎉 What's Been Built
 
-A complete, modern, production-ready website for Pittsburgh Combat with:
+A complete, modern, production-ready website for Pittsburgh Combat Club with:
 
 ### Pages
 - ✅ **Home** - Hero section with features and CTAs
@@ -221,7 +221,7 @@ pnpm lint
 ## ⚡ Next Steps
 
 1. Run `pnpm dev` and view your site
-2. Customize content for Pittsburgh Combat
+2. Customize content for Pittsburgh Combat Club
 3. Add real images to `/public` folder
 4. Set up Stripe for payments
 5. Add more content as needed
@@ -244,11 +244,11 @@ pnpm lint
 
 ## 📞 Support
 
-For issues specific to Pittsburgh Combat, contact your development team.
+For issues specific to Pittsburgh Combat Club, contact your development team.
 For Next.js questions, see [Next.js Documentation](https://nextjs.org/docs).
 For Stripe questions, see [Stripe Documentation](https://stripe.com/docs).
 
 ---
 
-**Built with ❤️ for Pittsburgh Combat**
+**Built with ❤️ for Pittsburgh Combat Club**
 

@@ -61,7 +61,7 @@ export default function Home() {
             Ready to Begin?
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Join Pittsburgh Combat today and start your journey to becoming a confident, skilled defender.
+            Join Pittsburgh Combat Club today and start your journey to becoming a confident, skilled defender.
           </p>
           <div className="pt-4">
             <Link href="/membership" className="btn-primary">

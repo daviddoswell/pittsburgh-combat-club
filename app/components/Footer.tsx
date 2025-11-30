@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold tracking-tight">Pittsburgh Combat</h3>
+            <h3 className="text-xl font-bold tracking-tight">Pittsburgh Combat Club</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
               Premier self-defense training in Pittsburgh. Building confidence through practical combat skills.
             </p>
@@ -73,7 +73,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-          <p>&copy; {currentYear} Pittsburgh Combat. All rights reserved.</p>
+          <p>&copy; {currentYear} Pittsburgh Combat Club. All rights reserved.</p>
         </div>
       </div>
     </footer>

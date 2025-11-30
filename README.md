@@ -1,6 +1,6 @@
-# Pittsburgh Combat
+# Pittsburgh Combat Club
 
-A modern, responsive website for Pittsburgh Combat - a premier self-defense training facility. Built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4.
+A modern, responsive website for Pittsburgh Combat Club - a premier self-defense training facility. Built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4.
 
 ## Features
 
@@ -111,5 +111,5 @@ The easiest way to deploy is using [Vercel](https://vercel.com):
 
 ## License
 
-All rights reserved © 2025 Pittsburgh Combat
+All rights reserved © 2025 Pittsburgh Combat Club
 # PITTSBURGH COMBAT CLUB

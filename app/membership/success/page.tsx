@@ -24,7 +24,7 @@ export default function MembershipSuccess() {
         {/* Success Message */}
         <div className="space-y-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-            Welcome to Pittsburgh Combat!
+            Welcome to Pittsburgh Combat Club!
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed">
             Your membership has been successfully activated. You're now part of our community.

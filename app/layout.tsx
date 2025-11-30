@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pittsburgh Combat - Premier Self-Defense Training",
-  description: "Pittsburgh Combat offers world-class self-defense training and martial arts instruction in Pittsburgh, PA.",
+  title: "Pittsburgh Combat Club - Premier Self-Defense Training",
+  description: "Pittsburgh Combat Club offers world-class self-defense training and martial arts instruction in Pittsburgh, PA.",
 };
 
 export default function RootLayout({

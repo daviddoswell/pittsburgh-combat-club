@@ -5,7 +5,7 @@ export default function About() {
         {/* Hero */}
         <div className="text-center space-y-6">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight">
-            About Pittsburgh Combat
+            About Us
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Building a community of confident, skilled individuals through world-class self-defense training.
@@ -16,7 +16,7 @@ export default function About() {
         <div className="space-y-6">
           <h2 className="text-3xl sm:text-4xl font-bold">Our Mission</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-            At Pittsburgh Combat, we believe everyone deserves to feel safe and confident. Our mission is to provide 
+            At Pittsburgh Combat Club, we believe everyone deserves to feel safe and confident. Our mission is to provide 
             accessible, effective self-defense training that empowers individuals of all backgrounds and skill levels. 
             We combine traditional martial arts wisdom with modern combat techniques to create a comprehensive training 
             system that works in real-world situations.

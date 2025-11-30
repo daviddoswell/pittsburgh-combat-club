@@ -38,7 +38,7 @@ export default function Navigation() {
             href="/"
             className="text-2xl font-bold text-white tracking-tight hover:opacity-80 transition-opacity duration-300"
           >
-            Pittsburgh Combat
+            Pittsburgh Combat Club
           </Link>
 
           {/* Desktop Navigation */}
